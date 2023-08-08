@@ -69,6 +69,7 @@ public class Calc {
                 }
             }
             try {
+                int prov1 = Integer.parseInt(arrayUserExpression[0]);
                 int prov2 = Integer.parseInt(arrayUserExpression[2]);
             } catch (NumberFormatException dsf53dsas) {
                 throw new NumberFormatException("используются одновременно разные системы счисления");
