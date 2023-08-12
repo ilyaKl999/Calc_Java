@@ -52,6 +52,8 @@ public class Calc {
                                 int n = f1.x * f2.x;
                                 System.out.println(rome[n]);
                                 break;
+                            default:
+                                throw new UncheckedUserException("формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
                         }
                     }
                 }
@@ -103,7 +105,7 @@ public class Calc {
                     System.out.println(n);
                     break;
                 default:
-                    throw new UncheckedUserException("формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)\")");
+                    throw new UncheckedUserException("формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
             }
         }
     }
